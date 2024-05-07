@@ -1,8 +1,10 @@
+/* Chatbot.css */
 
-body{
+body {
     background-color: rgb(251, 209, 245);
-}
-.chatbot-container {
+  }
+  
+  .chatbot-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,21 +15,59 @@ body{
   .chatbot-response {
     margin-bottom: 20px;
     color: rgb(10, 0, 0);
+    margin-right: 30%;
   }
   
   .chatbot-input {
     position: fixed;
     bottom: 20px;
-    left: 50%;
+    margin-left: 30px;
+    left: 35%;
     transform: translateX(-50%);
-
   }
-  .chatbot-input-box{
-    background-color:rgb(179, 163, 249);
+  
+  .chatbot-input-box {
+    background-color: rgb(179, 163, 249);
     width: 800px;
     height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4);
   }
-  .button{
+  
+  .button {
     border-radius: 5px;
-    background-color:rgb(179, 163, 249);
+    background-color: rgb(179, 163, 249);
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4);
   }
+  
+  .right-part {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 20%;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+    background-color: rgb(179, 163, 249);
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 65px);
+    resize: both; /* Allow resizing */
+    overflow: auto; /* Adding overflow to handle content overflow */
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4);
+  }
+  
+  .right-part h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    height:150px;
+  }
+  
+    .slider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
