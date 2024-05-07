@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(251, 209, 245);
+}
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .chatbot-response {
+    margin-bottom: 20px;
+    color: rgb(10, 0, 0);
+  }
+  
+  .chatbot-input {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  .chatbot-input-box{
+    background-color:rgb(179, 163, 249);
+    width: 800px;
+    height: 80px;
+  }
+  .button{
+    border-radius: 5px;
+    background-color:rgb(179, 163, 249);
+  }
