@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Chatbot.css'; // Importing CSS file for styling
-import SendIcon from '@mui/icons-material/Send'; //importing  material-icon for sendicon
+import SendIcon from '@mui/icons-material/Send'; // Importing material-icon for send icon
 
 const Chatbot = () => {
   const [inputText, setInputText] = useState('');
@@ -27,13 +27,27 @@ const Chatbot = () => {
     <div className="chatbot-container">
       <div className="chatbot-response">{responseText}</div>
       <div className="chatbot-input">
-        <input className='chatbot-input-box'
+        <input
+          className='chatbot-input-box'
           type="text"
           value={inputText}
           onChange={handleInputChange}
           placeholder="Type your message..."
         />
-        <button className="button" onClick={handleSendMessage} ><SendIcon/></button>
+        <button className="button" onClick={handleSendMessage}><SendIcon /></button>
+      </div>
+      {/* Right part with modifications and parameters */}
+      <div className="right-part">
+        <h2>Model</h2>
+        <input type="range" min="0" max="100" defaultValue="50" className="slider" />
+        <h2>Output Length</h2>
+        <input type="range" min="0" max="100" defaultValue="50" className="slider" />
+        <h2>Temperature</h2>
+        <input type="range" min="0" max="100" defaultValue="50" className="slider" />
+        <h2>Top p</h2>
+        <input type="range" min="0" max="100" defaultValue="50" className="slider" />
+        <h2>Top k</h2>
+        <input type="range" min="0" max="100" defaultValue="50" className="slider" />
       </div>
     </div>
   );
